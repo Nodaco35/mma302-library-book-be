@@ -1,24 +1,58 @@
 const express = require("express");
-const app = express();
-const EventRouter = require("./routes/EventRoutes");
-const BookingRouter = require("./routes/BookingRoutes");
+const cors = require("cors");
+const morgan = require("morgan");
 const connectDB = require("./config/db");
+const { createResourceRouter } = require("./routes/resourceRouter");
 
+const User = require("./models/User");
+const Book = require("./models/Book");
+const BorrowRequest = require("./models/BorrowRequest");
+const BorrowRecord = require("./models/BorrowRecord");
+const Category = require("./models/Category");
+
+const app = express();
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(morgan("dev"));
 
-app.use("/api/events", EventRouter);
-app.use("/api/bookings", BookingRouter);
+app.use(
+  "/users",
+  createResourceRouter(User, {
+    numericFields: ["id"],
+  })
+);
+app.use(
+  "/books",
+  createResourceRouter(Book, {
+    numericFields: ["id", "totalCopies", "availableCopies"],
+  })
+);
+app.use(
+  "/borrowRequests",
+  createResourceRouter(BorrowRequest, {
+    numericFields: ["id", "bookId", "userId", "approvedBy"],
+  })
+);
+app.use(
+  "/borrowRecords",
+  createResourceRouter(BorrowRecord, {
+    numericFields: ["id", "requestId", "bookId", "userId"],
+  })
+);
+app.use(
+  "/categories",
+  createResourceRouter(Category, {
+    numericFields: ["id"],
+  })
+);
 
 app.get("/", async (req, res) => {
-  try {
-    res.send({ message: "Welcome to Practical Exam!" });
-  } catch (error) {
-    res.send({ error: error.message });
-  }
+  res.send({ message: "Welcome to NoCoCo API" });
 });
 
-const PORT = process.env.PORT || 9999;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   connectDB();

@@ -4,7 +4,9 @@
   "description": "RESTFul API Application - Given",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server.js",
+    "split-db": "node scripts/split-db-json.js",
+    "seed": "node scripts/seed.js"
   },
   "keywords": [
     "nodejs",
