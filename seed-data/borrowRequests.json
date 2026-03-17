@@ -1,0 +1,192 @@
+﻿[
+    {
+        "id":  1,
+        "bookId":  1,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-09",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "bookId":  1,
+        "userId":  3,
+        "status":  "approved",
+        "requestDate":  "2026-03-10",
+        "approvedBy":  2,
+        "note":  "",
+        "id":  2
+    },
+    {
+        "id":  3,
+        "bookId":  5,
+        "userId":  1,
+        "status":  "pending",
+        "requestDate":  "2026-03-11",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  4,
+        "bookId":  8,
+        "userId":  3,
+        "status":  "approved",
+        "requestDate":  "2026-03-11",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  5,
+        "bookId":  12,
+        "userId":  1,
+        "status":  "rejected",
+        "requestDate":  "2026-03-11",
+        "approvedBy":  2,
+        "note":  "Book currently unavailable"
+    },
+    {
+        "id":  6,
+        "bookId":  3,
+        "userId":  3,
+        "status":  "pending",
+        "requestDate":  "2026-03-12",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  7,
+        "bookId":  14,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-12",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  8,
+        "bookId":  20,
+        "userId":  3,
+        "status":  "pending",
+        "requestDate":  "2026-03-12",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  9,
+        "bookId":  22,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-12",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  10,
+        "bookId":  11,
+        "userId":  3,
+        "status":  "rejected",
+        "requestDate":  "2026-03-13",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  11,
+        "bookId":  18,
+        "userId":  1,
+        "status":  "pending",
+        "requestDate":  "2026-03-13",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  12,
+        "bookId":  6,
+        "userId":  3,
+        "status":  "approved",
+        "requestDate":  "2026-03-13",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  13,
+        "bookId":  30,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-14",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  14,
+        "bookId":  25,
+        "userId":  3,
+        "status":  "pending",
+        "requestDate":  "2026-03-14",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  15,
+        "bookId":  40,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-14",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  16,
+        "bookId":  33,
+        "userId":  3,
+        "status":  "pending",
+        "requestDate":  "2026-03-14",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  17,
+        "bookId":  27,
+        "userId":  1,
+        "status":  "approved",
+        "requestDate":  "2026-03-15",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  18,
+        "bookId":  19,
+        "userId":  3,
+        "status":  "rejected",
+        "requestDate":  "2026-03-15",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "id":  19,
+        "bookId":  35,
+        "userId":  1,
+        "status":  "pending",
+        "requestDate":  "2026-03-15",
+        "approvedBy":  null,
+        "note":  ""
+    },
+    {
+        "id":  20,
+        "bookId":  41,
+        "userId":  3,
+        "status":  "approved",
+        "requestDate":  "2026-03-16",
+        "approvedBy":  2,
+        "note":  ""
+    },
+    {
+        "bookId":  45,
+        "userId":  3,
+        "status":  "handed_over",
+        "requestDate":  "2026-03-11",
+        "approvedBy":  2,
+        "note":  "",
+        "id":  21,
+        "handedOverAt":  "2026-03-11T01:23:48.636Z"
+    }
+]

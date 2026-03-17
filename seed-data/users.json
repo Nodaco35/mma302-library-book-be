@@ -1,0 +1,24 @@
+﻿[
+    {
+        "id":  1,
+        "name":  "Borrower User",
+        "email":  "user@example.com",
+        "password":  "123456",
+        "role":  "borrower"
+    },
+    {
+        "id":  2,
+        "name":  "Library Staff",
+        "email":  "staff@example.com",
+        "password":  "123456",
+        "role":  "staff"
+    },
+    {
+        "name":  "nodaco",
+        "email":  "cuongndhe180335@fpt.edu.vn",
+        "password":  "123123",
+        "role":  "borrower",
+        "createdAt":  "2026-03-10T10:00:51.567Z",
+        "id":  3
+    }
+]

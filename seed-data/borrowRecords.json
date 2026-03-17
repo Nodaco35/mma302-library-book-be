@@ -1,0 +1,123 @@
+﻿[
+    {
+        "id":  1,
+        "requestId":  1,
+        "bookId":  1,
+        "userId":  1,
+        "bookCode":  "BK001",
+        "borrowDate":  "2026-03-09",
+        "dueDate":  "2026-03-16",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "id":  2,
+        "requestId":  2,
+        "bookId":  1,
+        "userId":  3,
+        "bookCode":  "BK001",
+        "borrowDate":  "2026-03-10",
+        "dueDate":  "2026-03-17",
+        "returnDate":  "2026-03-15",
+        "status":  "returned"
+    },
+    {
+        "id":  3,
+        "requestId":  4,
+        "bookId":  8,
+        "userId":  3,
+        "bookCode":  "BK008",
+        "borrowDate":  "2026-03-11",
+        "dueDate":  "2026-03-18",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "id":  4,
+        "requestId":  7,
+        "bookId":  14,
+        "userId":  1,
+        "bookCode":  "BK014",
+        "borrowDate":  "2026-03-12",
+        "dueDate":  "2026-03-19",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "id":  5,
+        "requestId":  9,
+        "bookId":  22,
+        "userId":  1,
+        "bookCode":  "BK022",
+        "borrowDate":  "2026-03-12",
+        "dueDate":  "2026-03-19",
+        "returnDate":  "2026-03-16",
+        "status":  "returned"
+    },
+    {
+        "id":  6,
+        "requestId":  12,
+        "bookId":  6,
+        "userId":  3,
+        "bookCode":  "BK006",
+        "borrowDate":  "2026-03-13",
+        "dueDate":  "2026-03-20",
+        "returnDate":  "2026-03-11",
+        "status":  "returned"
+    },
+    {
+        "id":  7,
+        "requestId":  13,
+        "bookId":  30,
+        "userId":  1,
+        "bookCode":  "BK030",
+        "borrowDate":  "2026-03-14",
+        "dueDate":  "2026-03-21",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "id":  8,
+        "requestId":  15,
+        "bookId":  40,
+        "userId":  1,
+        "bookCode":  "BK040",
+        "borrowDate":  "2026-03-14",
+        "dueDate":  "2026-03-21",
+        "returnDate":  "2026-03-18",
+        "status":  "returned"
+    },
+    {
+        "id":  9,
+        "requestId":  17,
+        "bookId":  27,
+        "userId":  1,
+        "bookCode":  "BK027",
+        "borrowDate":  "2026-03-15",
+        "dueDate":  "2026-03-22",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "id":  10,
+        "requestId":  20,
+        "bookId":  41,
+        "userId":  3,
+        "bookCode":  "BK041",
+        "borrowDate":  "2026-03-16",
+        "dueDate":  "2026-03-23",
+        "returnDate":  null,
+        "status":  "borrowed"
+    },
+    {
+        "requestId":  21,
+        "bookId":  45,
+        "userId":  3,
+        "bookCode":  "BK045",
+        "borrowDate":  "2026-03-11",
+        "dueDate":  "2026-03-18",
+        "returnDate":  "2026-03-11",
+        "status":  "returned",
+        "id":  11
+    }
+]
