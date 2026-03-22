@@ -13,16 +13,23 @@ const seedDir = path.resolve(__dirname, "..", "seed-data");
 function readJson(name) {
   const file = path.join(seedDir, `${name}.json`);
   if (!fs.existsSync(file)) return [];
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  const content = fs.readFileSync(file, "utf8");
+  return JSON.parse(content.replace(/^\uFEFF/, ""));
 }
 
 async function seedCollection(model, name) {
-  const data = readJson(name);
-  await model.deleteMany({});
-  if (data.length > 0) {
-    await model.insertMany(data);
+  try {
+    console.log(`Processing ${name}...`);
+    const data = readJson(name);
+    await model.deleteMany({});
+    if (data.length > 0) {
+      await model.insertMany(data);
+    }
+    console.log(`Seeded ${name}: ${data.length} records`);
+  } catch (error) {
+    console.error(`Error seeding ${name}:`, error.message);
+    throw error;
   }
-  console.log(`Seeded ${name}: ${data.length} records`);
 }
 
 async function run() {
