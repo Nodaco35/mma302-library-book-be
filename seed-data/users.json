@@ -20,5 +20,13 @@
         "role":  "borrower",
         "createdAt":  "2026-03-10T10:00:51.567Z",
         "id":  3
+    },
+    {
+        "id":  4,
+        "name":  "System Admin",
+        "email":  "admin@example.com",
+        "password":  "admin123",
+        "role":  "admin",
+        "createdAt":  "2026-03-28T00:00:00.000Z"
     }
 ]

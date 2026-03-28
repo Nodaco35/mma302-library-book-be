@@ -9,6 +9,7 @@ const Book = require("./models/Book");
 const BorrowRequest = require("./models/BorrowRequest");
 const BorrowRecord = require("./models/BorrowRecord");
 const Category = require("./models/Category");
+const Payment = require("./models/Payment");
 
 const app = express();
 
@@ -45,6 +46,12 @@ app.use(
   "/categories",
   createResourceRouter(Category, {
     numericFields: ["id"],
+  })
+);
+app.use(
+  "/payments",
+  createResourceRouter(Payment, {
+    numericFields: ["id", "amount"],
   })
 );
 

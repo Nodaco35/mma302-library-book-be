@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "userId": "=============",
+    "borrowRecordId": "=============",
+    "amount": 50000,
+    "currency": "VND",
+    "method": "mock_card",
+    "status": "succeeded",
+    "reference": "PMT-0001",
+    "note": "Payment created from customer flow.",
+    "createdAt": "2026-03-28T00:10:00.000Z"
+  },
+  {
+    "id": 2,
+    "userId": "=============",
+    "borrowRecordId": "=============",
+    "amount": 20000,
+    "currency": "VND",
+    "method": "mock_card",
+    "status": "failed",
+    "reference": "PMT-0002",
+    "note": "Payment failed in mock flow.",
+    "createdAt": "2026-03-28T00:20:00.000Z"
+  }
+]

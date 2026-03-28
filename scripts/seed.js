@@ -7,6 +7,7 @@ const Book = require("../models/Book");
 const BorrowRequest = require("../models/BorrowRequest");
 const BorrowRecord = require("../models/BorrowRecord");
 const Category = require("../models/Category");
+const Payment = require("../models/Payment");
 
 const seedDir = path.resolve(__dirname, "..", "seed-data");
 
@@ -39,6 +40,7 @@ async function run() {
   await seedCollection(BorrowRequest, "borrowRequests");
   await seedCollection(BorrowRecord, "borrowRecords");
   await seedCollection(Category, "categories");
+  await seedCollection(Payment, "payments");
   process.exit(0);
 }
 
