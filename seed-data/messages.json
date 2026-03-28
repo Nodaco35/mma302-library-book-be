@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "conversationId": 1,
+    "senderId": 1,
+    "receiverId": 2,
+    "content": "Cho em hỏi thời gian trả sách?",
+    "createdAt": "2026-03-28T01:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "conversationId": 1,
+    "senderId": 2,
+    "receiverId": 1,
+    "content": "Bạn vui lòng trả sách trong 7 ngày nhé.",
+    "createdAt": "2026-03-28T01:05:00.000Z"
+  },
+  {
+    "id": 3,
+    "conversationId": 2,
+    "senderId": 3,
+    "receiverId": 4,
+    "content": "Admin cho em xin hỗ trợ tài khoản.",
+    "createdAt": "2026-03-28T02:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "conversationId": 2,
+    "senderId": 4,
+    "receiverId": 3,
+    "content": "Bạn cần hỗ trợ gì ạ?",
+    "createdAt": "2026-03-28T02:03:00.000Z"
+  },
+  {
+    "id": 5,
+    "conversationId": 3,
+    "senderId": 3,
+    "receiverId": 1,
+    "content": "Bạn có thấy sách mới chưa?",
+    "createdAt": "2026-03-28T03:10:00.000Z"
+  },
+  {
+    "id": 6,
+    "conversationId": 3,
+    "senderId": 1,
+    "receiverId": 3,
+    "content": "Mình thấy rồi, đang xem thử.",
+    "createdAt": "2026-03-28T03:12:00.000Z"
+  },
+  {
+    "id": 7,
+    "conversationId": 3,
+    "senderId": 3,
+    "receiverId": 1,
+    "content": "Nếu ổn thì mình mượn cùng nhé.",
+    "createdAt": "2026-03-28T03:14:00.000Z"
+  },
+  {
+    "id": 8,
+    "conversationId": 4,
+    "senderId": 3,
+    "receiverId": 2,
+    "content": "Chị ơi cho em hỏi tình trạng request?",
+    "createdAt": "2026-03-28T04:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "conversationId": 4,
+    "senderId": 2,
+    "receiverId": 3,
+    "content": "Request đã được duyệt rồi nhé.",
+    "createdAt": "2026-03-28T04:03:00.000Z"
+  },
+  {
+    "id": 10,
+    "conversationId": 4,
+    "senderId": 3,
+    "receiverId": 2,
+    "content": "Mình đã đăng ký mượn rồi nhé.",
+    "createdAt": "2026-03-28T04:05:00.000Z"
+  },
+  {
+    "id": 11,
+    "conversationId": 5,
+    "senderId": 3,
+    "receiverId": 4,
+    "content": "Cảm ơn admin đã hỗ trợ!",
+    "createdAt": "2026-03-28T05:20:00.000Z"
+  },
+  {
+    "id": 12,
+    "conversationId": 5,
+    "senderId": 4,
+    "receiverId": 3,
+    "content": "Không có gì, nếu cần cứ nhắn nhé.",
+    "createdAt": "2026-03-28T05:22:00.000Z"
+  }
+]

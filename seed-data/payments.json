@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "userId": "=============",
-    "borrowRecordId": "=============",
+    "userId": 1,
+    "borrowRecordId": 1,
     "amount": 50000,
     "currency": "VND",
     "method": "mock_card",
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "userId": "=============",
-    "borrowRecordId": "=============",
+    "userId": 3,
+    "borrowRecordId": 2,
     "amount": 20000,
     "currency": "VND",
     "method": "mock_card",
@@ -22,5 +22,41 @@
     "reference": "PMT-0002",
     "note": "Payment failed in mock flow.",
     "createdAt": "2026-03-28T00:20:00.000Z"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "borrowRecordId": 3,
+    "amount": 35000,
+    "currency": "VND",
+    "method": "mock_card",
+    "status": "succeeded",
+    "reference": "PMT-0003",
+    "note": "Late fee paid.",
+    "createdAt": "2026-03-28T00:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "borrowRecordId": 4,
+    "amount": 15000,
+    "currency": "VND",
+    "method": "mock_card",
+    "status": "succeeded",
+    "reference": "PMT-0004",
+    "note": "Damage fee paid.",
+    "createdAt": "2026-03-28T00:40:00.000Z"
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "borrowRecordId": 5,
+    "amount": 10000,
+    "currency": "VND",
+    "method": "mock_card",
+    "status": "failed",
+    "reference": "PMT-0005",
+    "note": "Card declined in mock flow.",
+    "createdAt": "2026-03-28T00:50:00.000Z"
   }
 ]

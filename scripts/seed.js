@@ -8,6 +8,8 @@ const BorrowRequest = require("../models/BorrowRequest");
 const BorrowRecord = require("../models/BorrowRecord");
 const Category = require("../models/Category");
 const Payment = require("../models/Payment");
+const Conversation = require("../models/Conversation");
+const Message = require("../models/Message");
 
 const seedDir = path.resolve(__dirname, "..", "seed-data");
 
@@ -41,6 +43,8 @@ async function run() {
   await seedCollection(BorrowRecord, "borrowRecords");
   await seedCollection(Category, "categories");
   await seedCollection(Payment, "payments");
+  await seedCollection(Conversation, "conversations");
+  await seedCollection(Message, "messages");
   process.exit(0);
 }
 

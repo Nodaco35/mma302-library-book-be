@@ -10,6 +10,8 @@ const BorrowRequest = require("./models/BorrowRequest");
 const BorrowRecord = require("./models/BorrowRecord");
 const Category = require("./models/Category");
 const Payment = require("./models/Payment");
+const Conversation = require("./models/Conversation");
+const Message = require("./models/Message");
 
 const app = express();
 
@@ -52,6 +54,18 @@ app.use(
   "/payments",
   createResourceRouter(Payment, {
     numericFields: ["id", "amount"],
+  })
+);
+app.use(
+  "/conversations",
+  createResourceRouter(Conversation, {
+    numericFields: ["id", "participantIds"],
+  })
+);
+app.use(
+  "/messages",
+  createResourceRouter(Message, {
+    numericFields: ["id", "conversationId", "senderId", "receiverId"],
   })
 );
 
