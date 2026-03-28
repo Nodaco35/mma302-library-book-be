@@ -56,6 +56,19 @@ app.use(
     numericFields: ["id", "amount"],
   })
 );
+app.delete("/conversations/:id", async (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    if (Number.isNaN(id)) return res.status(400).json({ error: "Invalid id." });
+
+    await Message.deleteMany({ conversationId: id });
+    const result = await Conversation.deleteOne({ id });
+    if (!result.deletedCount) return res.status(404).json({ error: "Not found." });
+    return res.status(204).send();
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
 app.use(
   "/conversations",
   createResourceRouter(Conversation, {
