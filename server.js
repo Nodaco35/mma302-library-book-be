@@ -59,13 +59,26 @@ app.use(
 app.delete("/conversations/:id", async (req, res) => {
   try {
     const id = Number(req.params.id);
-    if (Number.isNaN(id)) return res.status(400).json({ error: "Invalid id." });
+    console.log(`[DELETE] Request to delete conversation ID: ${req.params.id} -> parsed as ${id}`);
+    
+    if (Number.isNaN(id)) {
+      console.log(`[DELETE] Invalid ID: ${req.params.id}`);
+      return res.status(400).json({ error: "Invalid id." });
+    }
 
-    await Message.deleteMany({ conversationId: id });
+    const msgResult = await Message.deleteMany({ conversationId: id });
+    console.log(`[DELETE] Messages deleted: ${msgResult.deletedCount}`);
+    
     const result = await Conversation.deleteOne({ id });
-    if (!result.deletedCount) return res.status(404).json({ error: "Not found." });
+    if (!result.deletedCount) {
+      console.log(`[DELETE] Conversation not found: ${id}`);
+      return res.status(404).json({ error: "Not found." });
+    }
+    
+    console.log(`[DELETE] Conversation deleted successfully: ${id}`);
     return res.status(204).send();
   } catch (error) {
+    console.error(`[DELETE] Error deleting conversation ${req.params.id}:`, error);
     return res.status(500).json({ error: error.message });
   }
 });
